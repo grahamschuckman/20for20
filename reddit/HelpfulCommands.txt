@@ -1,0 +1,2 @@
+# Use to copy GitHub files directly into EC2 instance home directory after changing local directory to the downloaded location
+scp -i "XXX.pem" -r ./20for20/reddit ec2-user@ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com:~

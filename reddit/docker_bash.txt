@@ -5,3 +5,4 @@ sudo service docker start
 sudo chkconfig docker on
 sudo usermod -a -G docker ec2-user
 sudo yum install python3 -y
+sudo yum install git -y

@@ -9,7 +9,7 @@ neobolt==1.7.17
 neotime==1.7.4
 numpy==1.19.1
 pandas==1.1.0
-praw==7.1.0
+praw==7.4.0
 prawcore==1.4.0
 prompt-toolkit==2.0.10
 py2neo==4.3.0

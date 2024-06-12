@@ -38,11 +38,11 @@ steps:
 
 # variables:
 #   # Container registry service connection established during pipeline creation
-#   dockerRegistryServiceConnection: '<unique-id>'
-#   imageRepository: 'awslogger'
-#   containerRegistry: '<registryname>.azurecr.io'
-#   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-#   tag: '$(Build.BuildId)'
+#   dockerRegistryServiceConnection: '<unique-id>' # when you add the pipeline you have the ability to create a connection an exisiting ACR to push the images to
+#   imageRepository: 'awslogger' # name of the ACR repo where it will go
+#   containerRegistry: '<registryname>.azurecr.io' # name of the ACR
+#   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile' # location of the dockerfile in the repo
+#   tag: '$(Build.BuildId)' # this is the tag number based on the buildID
 
 #   # Agent VM image name
 #   vmImageName: 'ubuntu-latest'

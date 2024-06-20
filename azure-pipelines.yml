@@ -18,12 +18,20 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+# - task: wiz@0
+#   inputs:
+#     clientid: $(WIZ_CLIENT_ID)
+#     secret: $(WIZ_CLIENT_SECRET)
+#     path: '.'
+#     policyHitsOnly: true
+
 - task: wiz@0
   inputs:
-    clientid: $(WIZ_CLIENT_ID)
-    secret: $(WIZ_CLIENT_SECRET)
+    command: 'dir'
+    clientid: 'wgxq75hrlndpbktx3eupevf2x25cupzzuugvubvtrf4ntwbsqy2xg'
+    secret: 'VWUGQvE64FpxDz8fNAtKy3Tg3qQXsoXjNIMBK1ayp5HMr0ypq4ravuRNsOLDJ9vh'
     path: '.'
-    policyHitsOnly: true
+    policyHitsOnly: false
 
 # - task: wiz@0
 #   inputs:

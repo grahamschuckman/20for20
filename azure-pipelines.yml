@@ -20,15 +20,22 @@ steps:
 
 - task: wiz@0
   inputs:
-    command: 'iac'
     clientid: $(WIZ_CLIENT_ID)
     secret: $(WIZ_CLIENT_SECRET)
-    succeedOnFailures: false
-    policyHitsOnly: false
-    scanTags: "cicd=ado,app=terraform"
     path: '.'
-    name: 'Terraform Code'
-    scanSecrets: true
+    policyHitsOnly: true
+
+# - task: wiz@0
+#   inputs:
+#     command: 'iac'
+#     clientid: $(WIZ_CLIENT_ID)
+#     secret: $(WIZ_CLIENT_SECRET)
+#     succeedOnFailures: false
+#     policyHitsOnly: false
+#     scanTags: "cicd=ado,app=terraform"
+#     path: '.'
+#     name: 'Terraform Code'
+#     scanSecrets: true
 
 # trigger:
 # - main

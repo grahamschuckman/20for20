@@ -20,11 +20,11 @@ steps:
 
 - task: wiz@0
   env:
-    WIZ_CLIENT_ID: $(WIZ_CLIENT_ID)
-    WIZ_CLIENT_SECRET: $(WIZ_CLIENT_SECRET)
+    WIZ_CLIENT_ID_UI: $(WIZ_CLIENT_ID)
+    WIZ_CLIENT_SECRET_UI: $(WIZ_CLIENT_SECRET)
   inputs:
-    clientid: $(WIZ_CLIENT_ID)
-    secret: $(WIZ_CLIENT_SECRET)
+    clientid: $(WIZ_CLIENT_ID_UI)
+    secret: $(WIZ_CLIENT_SECRET_UI)
     path: '.'
     policyHitsOnly: true
 

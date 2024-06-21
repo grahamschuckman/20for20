@@ -19,14 +19,22 @@ steps:
   displayName: 'Run a multi-line script'
 
 - task: wiz@0
-  env:
-    WIZ_CLIENT_ID_UI: $(WIZ_CLIENT_ID)
-    WIZ_CLIENT_SECRET_UI: $(WIZ_CLIENT_SECRET)
   inputs:
-    clientid: $(WIZ_CLIENT_ID_UI)
-    secret: $(WIZ_CLIENT_SECRET_UI)
+    # command: 'iac'
+    clientid: $(WIZ_CLIENT_ID)
+    secret: $(WIZ_CLIENT_SECRET)
     path: '.'
     policyHitsOnly: true
+
+# - task: wiz@0
+#   env:
+#     WIZ_CLIENT_ID_UI: $(WIZ_CLIENT_ID)
+#     WIZ_CLIENT_SECRET_UI: $(WIZ_CLIENT_SECRET)
+#   inputs:
+#     clientid: $(WIZ_CLIENT_ID_UI)
+#     secret: $(WIZ_CLIENT_SECRET_UI)
+#     path: '.'
+#     policyHitsOnly: true
 
 # - task: wiz@0
 #   inputs:

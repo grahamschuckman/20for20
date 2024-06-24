@@ -20,7 +20,7 @@ steps:
 
 - task: wiz@0
   inputs:
-    # command: 'iac'
+    command: 'dir'
     clientid: $(WIZ_CLIENT_ID)
     secret: $(WIZ_CLIENT_SECRET)
     path: '.'
